@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="Sample"
+        android:enabled="true"
+        android:icon="@drawable/ic_sample_paper"
+        android:background="@drawable/circle_green"
+        android:shortcutShortLabel="@string/label_short_sample"
+        android:shortcutLongLabel="@string/label_long_sample" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.stanlo.researchgo"
+            android:targetClass="com.stanlo.researchgo.sample" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="Chapters"
+        android:enabled="true"
+        android:icon="@drawable/ic_research_paper"
+        android:background="@drawable/circle_blue"
+        android:shortcutShortLabel="@string/label_short_chapters"
+        android:shortcutLongLabel="@string/label_long_chapters" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.stanlo.researchgo"
+            android:targetClass="com.stanlo.researchgo.chapters" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="Quizzes"
+        android:enabled="true"
+        android:icon="@drawable/ic_gamepad"
+        android:background="@drawable/circle_red"
+        android:shortcutShortLabel="@string/label_short_quizzes"
+        android:shortcutLongLabel="@string/label_long_quizzes" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.stanlo.researchgo"
+            android:targetClass="com.stanlo.researchgo.quizzes" />
+    </shortcut>
+
+</shortcuts>

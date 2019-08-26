@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f4c2c2</color>
+    <color name="colorPrimaryDark">#c19192</color>
+    <color name="colorAccent">#4285F4</color>
+    <color name="colorBackground">#BCAAA4</color>
+    <!-- Blue -->
+    <color name="blue_bg">#302196F3</color>
+    <color name="blue_fg">#2962FF</color>
+    <!-- Red -->
+    <color name="red_bg">#30F44336</color>
+    <color name="red_fg">#FF1744</color>
+    <!-- Green -->
+    <color name="green_bg">#304CAF50</color>
+    <color name="green_fg">#00C853</color>
+    <!-- Yellow -->
+    <color name="yellow_fg">#FFD600</color>
+    <color name="yellow_bg">#30FFEB3B</color>
+
+    <!--Text color Light Mode -->
+    <color name="lightgrey">#4DFFFFFF</color>
+</resources>
+
