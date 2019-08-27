@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="#fafafa"
     android:padding="16dp"
     tools:context=".quizzes">
 
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Quiz Time!!"
+        android:text="Research Quiz"
+        android:fontFamily="@font/circular_std_black"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="59sp" />
@@ -25,6 +26,8 @@
         android:layout_above="@id/button_start_quiz"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/circular_std_medium"
         android:text="Highscore: 0"
         android:textSize="20sp" />
 
@@ -35,16 +38,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/circular_std_book"
         android:text="Start Quiz" />
 
     <TextView
-        android:id="@+id/text_view_highscore2"
+        android:id="@+id/text_view_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_start_quiz"
+        android:layout_above="@id/button_start_quiz"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:text="Highscore: 0"
+        android:fontFamily="@font/circular_std_medium"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:text="1.0.0"
         android:textSize="20sp" />
 
 </RelativeLayout>

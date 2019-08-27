@@ -6,6 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -26,9 +28,7 @@ public class quizzes extends AppCompatActivity {
         setContentView(R.layout.activity_quizzes);
         textViewHighscore = findViewById(R.id.text_view_highscore);
         loadHighscore();
-        //set title
-        getSupportActionBar().setTitle("Quizzes");
-        //
+
         Button buttonStartQuiz = findViewById(R.id.button_start_quiz);
         buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
             @Override

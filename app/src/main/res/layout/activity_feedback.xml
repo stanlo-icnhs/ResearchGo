@@ -32,19 +32,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTo" />
 
-    <android.support.design.widget.TextInputLayout
+    <EditText
         android:id="@+id/txtMsg"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="150dp"
         android:layout_marginTop="8dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:gravity="top"
         android:hint="Message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSub" />
 
-    <Button
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnSend"
         android:layout_width="100dp"
         android:layout_height="wrap_content"

@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ public class Feedback extends AppCompatActivity {
     private EditText eTo;
     private EditText eSubject;
     private EditText eMsg;
-    private Button btn;
+    private FloatingActionButton btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class Feedback extends AppCompatActivity {
         eTo.setText ( "tannyencina@gmail.com" );
         eSubject = (EditText)findViewById(R.id.txtSub);
         eMsg = (EditText)findViewById(R.id.txtMsg);
-        btn = (Button)findViewById(R.id.btnSend);
+        btn = (FloatingActionButton) findViewById(R.id.btnSend);
         btn.setOnClickListener(new View.OnClickListener() {
 
             @Override

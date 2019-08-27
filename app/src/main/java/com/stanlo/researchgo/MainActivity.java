@@ -120,10 +120,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id){
-            case R.id.about:
-                Intent aboutintent = new Intent(this,About.class);
-                this.startActivity(aboutintent);
-                break;
             case R.id.settings:
                 Intent settingsintent = new Intent(this,Settings.class);
                 this.startActivity(settingsintent);
