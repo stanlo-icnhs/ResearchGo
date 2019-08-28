@@ -4,3 +4,4 @@ V1.0_alpha
 
 Changelog:
 - Remove Backbutton in Chapters page
+- Fullscreen in Quizzes Activity
