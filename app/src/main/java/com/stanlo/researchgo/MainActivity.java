@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
         //chapters Cast
 
         chapters = findViewById(R.id.chapters);
