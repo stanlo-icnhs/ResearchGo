@@ -3,16 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="10dp"
     android:background="#fcfcfc"
-    android:gravity="center"
+    android:layout_gravity="center"
     android:fitsSystemWindows="true"
     android:id="@+id/ll">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:titleMarginStart="40dp"
+        app:logo="@drawable/ic_menu"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
+        android:layout_marginTop="80dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -96,6 +110,7 @@
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

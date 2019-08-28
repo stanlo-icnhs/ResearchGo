@@ -36,9 +36,7 @@ public class quizzes extends AppCompatActivity {
                 startQuiz();
             }
         });
-        //navigation welcome
-        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Your are in Quizzes!", Snackbar.LENGTH_LONG);
-        snackbar.show();
+
 
     }
     private void startQuiz() {
