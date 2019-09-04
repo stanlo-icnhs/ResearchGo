@@ -17,7 +17,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/chapters"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -58,9 +58,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/quizzes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,9 +104,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/sample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -150,9 +150,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/sample4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -196,9 +196,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/sample5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -242,9 +242,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/sample6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -281,7 +281,7 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
