@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import static android.widget.Toast.LENGTH_SHORT;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private CardView chapters;
     private  CardView quizzes;
     private CardView sample;
+    private ImageView hamburger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Hello There User!!!", Snackbar.LENGTH_LONG);
         snackbar.show();
         getSupportActionBar().hide();
+
 
 
 
