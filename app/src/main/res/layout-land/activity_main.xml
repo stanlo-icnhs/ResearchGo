@@ -7,19 +7,9 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:background="#fcfcfc"
-    android:layout_gravity="center"
+    android:gravity="center"
     android:id="@+id/ll">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        app:title="@string/app_name"
-        app:titleMarginStart="40dp"
-        app:logo="@drawable/ic_menu"
-        android:layout_height="wrap_content">
-
-    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
