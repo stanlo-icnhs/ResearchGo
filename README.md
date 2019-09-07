@@ -6,3 +6,4 @@ Changelog:
 - Remove Backbutton in Chapters page
 - Fullscreen in Quizzes Activity
 - Custom Toolbar for ModalBottomSheet in optionsMenu
+- Migrated to Android X
