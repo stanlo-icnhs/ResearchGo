@@ -16,6 +16,9 @@
     <!-- Yellow -->
     <color name="yellow_fg">#FFD600</color>
     <color name="yellow_bg">#30FFEB3B</color>
+    <!-- Purple -->
+    <color name="purple_fg">#8e24aa</color>
+    <color name="purple_bg">#ba68c8</color>
 
     <!--Text color Light Mode -->
     <color name="lightgrey">#4DFFFFFF</color>

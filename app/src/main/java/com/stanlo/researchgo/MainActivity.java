@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
     String[] maintitle ={
             "Research Paper Making","Quizzes",
-            "Sample Research Paper",
+            "Sample Research Paper","FAQ",
     };
 
 
     Integer[] imgid={
             R.drawable.ic_research_paper,R.drawable.ic_gamepad,
-            R.drawable.ic_sample_paper,
+            R.drawable.ic_sample_paper,R.drawable.faq,
     };
 
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //welcome snackbar
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Hello There User!!!", Snackbar.LENGTH_LONG);
         snackbar.show();
+        getSupportActionBar().hide();
 
 
         //contents
