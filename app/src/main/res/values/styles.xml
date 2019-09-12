@@ -15,6 +15,10 @@
         <item name="buttoncolor">#2196F3</item>
 
     </style>
+    <style name="Apptheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 
 

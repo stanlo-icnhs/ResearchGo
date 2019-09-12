@@ -7,17 +7,33 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    ListView list;
+
+    String[] maintitle ={
+            "Research Paper Making","Quizzes",
+            "Sample Research Paper",
+    };
 
 
-    private CardView chapters;
-    private  CardView quizzes;
-    private CardView sample;
-    private ImageView hamburger;
+    Integer[] imgid={
+            R.drawable.ic_research_paper,R.drawable.ic_gamepad,
+            R.drawable.ic_sample_paper,
+    };
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,83 +42,44 @@ public class MainActivity extends AppCompatActivity {
         //welcome snackbar
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Hello There User!!!", Snackbar.LENGTH_LONG);
         snackbar.show();
-        getSupportActionBar().hide();
 
 
+        //contents
+        MyListAdapter adapter=new MyListAdapter(this, maintitle,imgid);
+        list= findViewById(R.id.list);
+        list.setAdapter(adapter);
 
-
-
-
-
-
-
-
-
-        //chapters Cast
-
-        chapters = findViewById(R.id.chapters);
-      chapters.setOnClickListener ( new View.OnClickListener () {
-          @Override
-          public void onClick(View v) {
-              Intent chapters = new Intent ( MainActivity.this, chapters.class );
-              startActivity(chapters);
-          }
-      } );
-
-        //quizzes Cast
-
-        quizzes = findViewById(R.id.quizzes);
-        quizzes.setOnClickListener ( new View.OnClickListener () {
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent sample = new Intent ( MainActivity.this, quizzes.class );
-                startActivity(sample);
+            public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+                // TODO Auto-generated method stub
+                if(position == 0) {
+                    //code specific to first list item
+                    Toast.makeText(getApplicationContext(),"Place Your First Option Code",Toast.LENGTH_SHORT).show();
+                }
+
+                else if(position == 1) {
+                    //code specific to 2nd list item
+                    Toast.makeText(getApplicationContext(),"Place Your Second Option Code",Toast.LENGTH_SHORT).show();
+                }
+
+                else if(position == 2) {
+
+                    Toast.makeText(getApplicationContext(),"Place Your Third Option Code",Toast.LENGTH_SHORT).show();
+                }
+                else if(position == 3) {
+
+                    Toast.makeText(getApplicationContext(),"Place Your Forth Option Code",Toast.LENGTH_SHORT).show();
+                }
+                else if(position == 4) {
+
+                    Toast.makeText(getApplicationContext(),"Place Your Fifth Option Code", Toast.LENGTH_SHORT).show();
+                }
+
             }
-        } );
 
-        //sample Cast
 
-        sample = findViewById(R.id.sample);
-        sample.setOnClickListener ( new View.OnClickListener () {
-            @Override
-            public void onClick(View v) {
-                Intent sample = new Intent ( MainActivity.this, sample.class );
-                startActivity(sample);
-            }
-        } );
-
-        // Options Long click
-
-        chapters.setOnLongClickListener ( new View.OnLongClickListener () {
-            @Override
-            public boolean onLongClick(View v) {
-                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Learn to how make a Research Paper", Snackbar.LENGTH_LONG);
-                snackbar.show();
-
-                return true;
-            }
-        } );
-
-        quizzes.setOnLongClickListener ( new View.OnLongClickListener () {
-            @Override
-            public boolean onLongClick(View v) {
-                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Test your knowledge in making papers", Snackbar.LENGTH_LONG);
-                snackbar.show();
-
-                return true;
-            }
-        } );
-
-        sample.setOnLongClickListener ( new View.OnLongClickListener () {
-            @Override
-            public boolean onLongClick(View v) {
-                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "View sample PDF Research Paper", Snackbar.LENGTH_LONG);
-                snackbar.show();
-
-                return true;
-            }
-        } );
-    }
+    });
 
 
 
@@ -114,4 +91,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}
+}}
+
