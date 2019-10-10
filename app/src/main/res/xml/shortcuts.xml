@@ -3,20 +3,19 @@
     <shortcut
         android:shortcutId="Sample"
         android:enabled="true"
-        android:icon="@drawable/ic_sample_paper"
-        android:background="@drawable/circle_green"
+        android:icon="@drawable/shortcut_settings"
         android:shortcutShortLabel="@string/label_short_sample"
         android:shortcutLongLabel="@string/label_long_sample" >
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.stanlo.researchgo"
-            android:targetClass="com.stanlo.researchgo.sample" />
+            android:targetClass="com.stanlo.researchgo.settings_page" />
     </shortcut>
 
     <shortcut
         android:shortcutId="Chapters"
         android:enabled="true"
-        android:icon="@drawable/ic_research_paper"
+        android:icon="@mipmap/ic_launcher"
         android:background="@drawable/circle_blue"
         android:shortcutShortLabel="@string/label_short_chapters"
         android:shortcutLongLabel="@string/label_long_chapters" >

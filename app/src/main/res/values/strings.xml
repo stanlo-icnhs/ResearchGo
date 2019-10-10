@@ -1,15 +1,8 @@
 <resources>
     <string name="app_name">Research Go</string>
     <string name="welcome">Theme Example</string>
-    <string-array name="Themes">
-        <item>Colorful</item>
-        <item>Dark </item>
-        <item>AOSP</item>
-        <item>ML</item>
-        <item>Scientific</item>
-    </string-array>
-
     <string name="OK">OK</string>
+
     <string name="def_theme">Colorful</string>
     <string name="theme_summary">Appearance</string>
     <string name="theme_dialog_title">Theme</string>
@@ -20,13 +13,20 @@
     <string name="selection_sub2">Test your knowledge in making papers</string>
     <string name="selection3">Sample Research Paper</string>
     <string name="selection_sub3">View sample PDF Research Paper</string>
-
     <string name="label_short_chapters">Chapters</string>
+
     <string name="label_long_chapters">Chapters</string>
-
     <string name="label_short_sample">Sample Paper</string>
-    <string name="label_long_sample">Sample Paper</string>
 
+    <string name="label_long_sample">Sample Paper</string>
     <string name="label_short_quizzes">Quizzes</string>
+
     <string name="label_long_quizzes">Quizzes</string>
+    <string-array name="Themes">
+        <item>Colorful</item>
+        <item>Dark </item>
+        <item>AOSP</item>
+        <item>ML</item>
+        <item>Scientific</item>
+    </string-array>
 </resources>
