@@ -3,7 +3,7 @@ Writing Research
 V1.0_alpha
 
 Changelog:
-July 10 2019
+August 26, 2019
 - Remove Backbutton in Chapters page
 
 September 11 2019
