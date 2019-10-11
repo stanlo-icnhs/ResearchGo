@@ -3,6 +3,7 @@ Writing Research
 V1.0_alpha
 
 Changelog:
+
 August 26, 2019
 - Remove Backbutton in Chapters page
 
@@ -22,3 +23,7 @@ October 10 2019
 - One Handed User Interface BETA 1.0
 - Switched backed to CardView
 - Revamped Custom Shortcut icon (7.1)
+
+October 11 2019
+- Colorize Shortcuts Menu (7.10)
+- Added Back Actionbar
