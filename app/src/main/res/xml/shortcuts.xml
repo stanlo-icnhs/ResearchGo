@@ -13,15 +13,15 @@
     </shortcut>
 
     <shortcut
-        android:shortcutId="Chapters"
+        android:shortcutId="FAQ"
         android:enabled="true"
-        android:icon="@drawable/ic_shortcut_book"
-        android:shortcutShortLabel="@string/label_short_chapters"
-        android:shortcutLongLabel="@string/label_long_chapters" >
+        android:icon="@drawable/ic_shortcut_faq"
+        android:shortcutShortLabel="@string/label_short_faq"
+        android:shortcutLongLabel="@string/label_long_faq" >
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.stanlo.researchgo"
-            android:targetClass="com.stanlo.researchgo.chapters" />
+            android:targetClass="com.stanlo.researchgo.faq" />
     </shortcut>
 
     <shortcut

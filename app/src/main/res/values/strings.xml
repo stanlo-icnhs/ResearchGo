@@ -12,8 +12,8 @@
     <string name="selection3">Sample Research Paper</string>
     <string name="selection_sub3">View sample PDF Research Paper</string>
 
-    <string name="label_short_chapters">Chapters</string>
-    <string name="label_long_chapters">Chapters</string>
+    <string name="label_short_faq">FAQ</string>
+    <string name="label_long_faq">FAQ</string>
 
     <string name="label_short_settings">Settings</string>
     <string name="label_long_settings">Settings</string>
