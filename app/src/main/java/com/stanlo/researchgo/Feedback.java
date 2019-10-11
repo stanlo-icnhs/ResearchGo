@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,12 +15,14 @@ import androidx.appcompat.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.EditText;
 
+import org.w3c.dom.Text;
+
 public class Feedback extends AppCompatActivity {
 
     //feedback
-    private EditText eTo;
-    private EditText eSubject;
-    private EditText eMsg;
+    private TextInputEditText eTo;
+    private TextInputEditText eSubject;
+    private TextInputEditText eMsg;
     private FloatingActionButton btn;
 
     @Override
@@ -33,13 +37,15 @@ public class Feedback extends AppCompatActivity {
         else {
 
         }
+
         //feedback
         setContentView(R.layout.activity_feedback);
-        eTo = (EditText)findViewById(R.id.txtTo);
+        eTo = findViewById(R.id.txtTo);
+
+        eSubject = findViewById(R.id.txtSub);
+        eMsg = findViewById(R.id.txtMsg);
+        btn = findViewById(R.id.btnSend);
         eTo.setText ( "tannyencina@gmail.com" );
-        eSubject = (EditText)findViewById(R.id.txtSub);
-        eMsg = (EditText)findViewById(R.id.txtMsg);
-        btn = (FloatingActionButton) findViewById(R.id.btnSend);
         btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -56,6 +62,10 @@ public class Feedback extends AppCompatActivity {
 
 
     }
+
+
+
+
     public boolean isConnected(Context context) {
 
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -65,8 +75,7 @@ public class Feedback extends AppCompatActivity {
             android.net.NetworkInfo wifi = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
             android.net.NetworkInfo mobile = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
-            if((mobile != null && mobile.isConnectedOrConnecting()) || (wifi != null && wifi.isConnectedOrConnecting())) return true;
-        else return false;
+            return (mobile != null && mobile.isConnectedOrConnecting ()) || (wifi != null && wifi.isConnectedOrConnecting ());
         } else
         return false;
     }

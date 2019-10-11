@@ -16,6 +16,8 @@
 
     </style>
 
+    <style name="MaterialTextBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"></style>
+
 
 
 

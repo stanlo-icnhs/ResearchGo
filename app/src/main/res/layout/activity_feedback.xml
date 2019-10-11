@@ -11,38 +11,57 @@
     tools:context=".Feedback"
     android:orientation="vertical" >
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtTo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="To"
-        android:inputType="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_height="wrap_content"
+            android:hint="To" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <EditText
-        android:id="@+id/txtSub"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageTextInputLayout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Subject"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTo" />
+        android:layout_margin="10dp">
 
-    <EditText
-        android:id="@+id/txtMsg"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSub"
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_height="wrap_content"
+            android:hint="Subject" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageTextInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="0"
-        android:gravity="top"
-        android:hint="Message"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSub" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtMsg"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:hint="Message" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnSend"
