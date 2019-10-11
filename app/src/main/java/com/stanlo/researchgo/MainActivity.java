@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //welcome snackbar
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Hello There User!!!", Snackbar.LENGTH_LONG);
         snackbar.show();
-        getSupportActionBar().hide();
+
 
 
 

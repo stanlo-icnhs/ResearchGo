@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut
-        android:shortcutId="Sample"
+        android:shortcutId="Settings"
         android:enabled="true"
-        android:icon="@drawable/shortcut_settings"
-        android:shortcutShortLabel="@string/label_short_sample"
-        android:shortcutLongLabel="@string/label_long_sample" >
+        android:icon="@drawable/ic_shortcut_settings"
+        android:shortcutShortLabel="@string/label_short_settings"
+        android:shortcutLongLabel="@string/label_long_settings" >
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.stanlo.researchgo"
@@ -15,8 +15,7 @@
     <shortcut
         android:shortcutId="Chapters"
         android:enabled="true"
-        android:icon="@mipmap/ic_launcher"
-        android:background="@drawable/circle_blue"
+        android:icon="@drawable/ic_shortcut_book"
         android:shortcutShortLabel="@string/label_short_chapters"
         android:shortcutLongLabel="@string/label_long_chapters" >
         <intent
@@ -26,16 +25,15 @@
     </shortcut>
 
     <shortcut
-        android:shortcutId="Quizzes"
+        android:shortcutId="Bug Report"
         android:enabled="true"
-        android:icon="@drawable/ic_gamepad"
-        android:background="@drawable/circle_red"
-        android:shortcutShortLabel="@string/label_short_quizzes"
-        android:shortcutLongLabel="@string/label_long_quizzes" >
+        android:icon="@drawable/ic_shortcut_bug_report"
+        android:shortcutShortLabel="@string/label_short_bug"
+        android:shortcutLongLabel="@string/label_long_bug" >
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.stanlo.researchgo"
-            android:targetClass="com.stanlo.researchgo.quizzes" />
+            android:targetClass="com.stanlo.researchgo.feedback" />
     </shortcut>
 
 </shortcuts>
