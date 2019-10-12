@@ -20,15 +20,16 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/chapters"
-            android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
-            android:layout_height="140dp">
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="4dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:background="?attr/cardbackground"
+                android:background="@drawable/chapters_gradient_purple"
                 android:elevation="4dp"
                 android:padding="16dp">
 
@@ -47,10 +48,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/cardview_image4"
-                    android:paddingBottom="5dp"
                     android:fontFamily="@font/circular_std_black"
+                    android:paddingBottom="5dp"
+                    android:textColor="#fafafa"
                     android:text="Chapters"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
             </RelativeLayout>
 
@@ -65,8 +67,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:background="?attr/cardbackground"
-                android:elevation="4dp"
+                android:background="@drawable/quizzes_gradient_orange"
                 android:padding="16dp">
                 <ImageView
                     android:id="@+id/imageView4"
@@ -86,7 +87,8 @@
                     android:layout_toRightOf="@+id/cardview_image1"
                     android:paddingBottom="5dp"
                     android:text="Quiz"
-                    android:textSize="40sp" />
+                    android:textColor="#fafafa"
+                    android:textSize="30sp" />
 
             </RelativeLayout>
 
@@ -101,7 +103,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:background="?attr/cardbackground"
+                android:background="@drawable/sample_gradient_blue"
                 android:elevation="4dp"
                 android:padding="16dp">
 
@@ -123,17 +125,53 @@
                     android:layout_toRightOf="@+id/cardview_image3"
                     android:paddingBottom="5dp"
                     android:text="Sample Paper"
-                    android:textSize="40sp" />
+                    android:textColor="#fafafa"
+                    android:textSize="30sp" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/sample4"
+            android:id="@+id/faq"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/faq_gradient_green"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    app:srcCompat="@drawable/ic_book" />
+
+                <TextView
+                    android:id="@+id/cardview_list_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_black"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cardview_image3"
+                    android:paddingBottom="5dp"
+                    android:text="FAQ"
+                    android:textColor="#fafafa"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
 
 
 
