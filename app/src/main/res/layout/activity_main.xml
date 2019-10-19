@@ -15,7 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_height="140dp">
 
         <androidx.cardview.widget.CardView
@@ -24,7 +24,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="20dp"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="6dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                     android:layout_height="60dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    app:srcCompat="@drawable/ic_book" />
+                    app:srcCompat="@drawable/ic_book_transcluent" />
 
                 <TextView
                     android:id="@+id/cardview_list_title"
@@ -50,8 +50,8 @@
                     android:layout_toRightOf="@+id/cardview_image4"
                     android:fontFamily="@font/circular_std_black"
                     android:paddingBottom="5dp"
-                    android:textColor="#fafafa"
                     android:text="Chapters"
+                    android:textColor="#fafafa"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -69,13 +69,14 @@
                 android:layout_height="140dp"
                 android:background="@drawable/quizzes_gradient_orange"
                 android:padding="16dp">
+
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    app:srcCompat="@drawable/ic_book" />
+                    app:srcCompat="@drawable/ic_quiz_translucent" />
 
                 <TextView
                     android:id="@+id/cardview_list_title1"
@@ -113,7 +114,7 @@
                     android:layout_height="60dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    app:srcCompat="@drawable/ic_book" />
+                    app:srcCompat="@drawable/ic_sample_paper_translucent" />
 
                 <TextView
                     android:id="@+id/cardview_list_title3"
@@ -152,7 +153,7 @@
                     android:layout_height="60dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    app:srcCompat="@drawable/ic_book" />
+                    app:srcCompat="@drawable/ic_faq_translucent" />
 
                 <TextView
                     android:id="@+id/cardview_list_title4"
